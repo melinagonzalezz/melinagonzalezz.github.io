@@ -1,13 +1,12 @@
-/* Estilos generales */
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f5f0f6; /* Color de fondo lila claro */
-}
+    background-color: #f5f0f6; 
 
-/* Estilo para centrar y dar borde redondeado a las secciones */
+
 .section-container {
     max-width: 800px;
     margin: 0 auto;
@@ -20,7 +19,7 @@ body {
 }
 
 header {
-    background: linear-gradient(135deg, #b68fd1, #7f4f9f); /* Gradiente lila claro */
+    background: linear-gradient(135deg, #b68fd1, #7f4f9f);
     color: #fff;
     text-align: center;
     padding: 50px 20px;
@@ -35,11 +34,11 @@ header h1 {
 
 header p {
     font-size: 1.1em;
-    margin-top: 20px;
+    margin-top: 20px;}
 }
 
 nav {
-    background-color: #7f4f9f; /* Color de fondo violeta claro */
+    background-color: #7f4f9f; 
     padding: 10px 0;
     text-align: center;
     border-radius: 10px;
@@ -67,20 +66,20 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* Estilo de las secciones */
+
 section {
     padding: 20px;
     border-radius: 10px;
-    background-color: #f9f7fa; /* Color de fondo blanco ligeramente lila */
+    background-color: #f9f7fa;
     margin-bottom: 20px;
     border: 1px solid #ddd;
 }
 
 section h2 {
-    color: #7f4f9f; /* Color violeta claro */
+    color: #7f4f9f; 
 }
 
-/* Estilos de las tablas */
+
 table {
     width: 100%;
     border-collapse: collapse;
@@ -94,11 +93,10 @@ table, th, td {
 }
 
 thead {
-    background-color: #b68fd1; /* Color de fondo lila claro */
+    background-color: #b68fd1; 
     color: #fff;
 }
 
-/* Estilo de los enlaces */
 .social-links {
     text-align: center;
     margin-top: 20px;
@@ -110,15 +108,15 @@ thead {
 }
 
 .social-links img {
-height: 50%;
-width: 50%;
+    height: 50%;
+    width: 50%;
 }
 
-/* Estilo del formulario de contacto */
+
 form {
     max-width: 600px;
     margin: 0 auto;
-    background-color: #8b4db8c6; /* Color de fondo lila claro */
+    background-color: #8b4db8c6; 
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 10px;
@@ -135,7 +133,7 @@ form input[type="text"],
 form input[type="email"],
 form select,
 form textarea {
-    width: 70%;
+    width: 100%; 
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ddd;
@@ -144,7 +142,7 @@ form textarea {
 }
 
 form input[type="submit"] {
-    background-color: #0b060f; /* Color de fondo lila claro */
+    background-color: #0b060f; 
     color: #fff;
     border: none;
     padding: 12px 10px;
@@ -154,5 +152,40 @@ form input[type="submit"] {
 }
 
 form input[type="submit"]:hover {
-    background-color: #7f4f9f; /* Color de fondo violeta claro */
+    background-color: #7f4f9f; 
 }
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .section-container {
+        padding: 10px;
+        margin-top: 10px;
+    }
+
+    form input[type="text"],
+    form input[type="email"],
+    form select,
+    form textarea {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    header p {
+        font-size: 1em;
+    }
+
+    form input[type="submit"] {
+        font-size: 1em;
+        padding: 10px;
+    }
+}
+

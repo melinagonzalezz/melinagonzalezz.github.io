@@ -1,66 +1,83 @@
-/* Reset and general styles */
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 20px;
     padding: 0;
-    background-color: #f0f0f5; /* Light lilac background */
+    background-color: #f0f0f5; 
 }
 
-/* Gallery container */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
 .gallery {
     max-width: 1000px;
     margin: 0 auto;
     text-align: center;
-    background-color: #fff; /* White background for gallery */
+    background-color: #fff; 
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); 
 }
 
-/* Headings */
+
 h1 {
-    color: #6a5acd; /* Dark lilac for main heading */
+    color: #6a5acd; 
     margin-bottom: 20px;
 }
 
 h2 {
-    color: #333; /* Dark gray for image titles */
+    color: #333;
     margin-bottom: 10px;
 }
 
-/* Image container */
+
 .image-container {
     display: inline-block;
-    width: calc(50% - 20px); /* Two images per row with margin */
+    width: calc(50% - 20px); 
     margin: 10px;
     vertical-align: top;
-    text-align: left; /* Align text to the left */
-    background-color: #fff; /* White background for image containers */
+    text-align: left; 
+    background-color: #fff; 
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
-    overflow: hidden; /* Hide overflow if image is larger */
-}
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    overflow: hidden; }
 
 .image-container img {
     width: 100%;
     height: auto;
     display: block;
-    border-radius: 8px 8px 0 0; /* Rounded corners only on top */
+    border-radius: 8px 8px 0 0; 
 }
 
-/* Image description */
+
 .image-description {
     padding: 15px;
-    background-color: #f9f9f9; /* Light gray background for description */
-    color: #555; /* Medium gray text color */
+    background-color: #f9f9f9; 
+    color: #555; 
     font-size: 14px;
     line-height: 1.4;
 }
 
-/* Responsive adjustments */
+
 @media (max-width: 768px) {
+    body {
+        margin: 10px;
+    }
+
     .image-container {
-        width: calc(100% - 20px); /* Full width on smaller screens */
+        width: calc(100% - 20px); 
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .image-description {
+        font-size: 12px;
+        padding: 10px;
     }
 }

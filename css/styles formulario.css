@@ -1,59 +1,70 @@
 h1 {
-    text-align: center; /* Alinea el texto al centro */
-    margin-top: 100px; /* Elimina el margen superior predeterminado */
+    text-align: center;
+    margin-top: 100px;
 }
 
-/* Estilo para el contenedor del formulario */
 .container {
     width: 80%;
-    max-width: 500px; /* Ancho máximo del formulario */
-    background-color: #f2f2f2; /* Fondo gris claro */
-    padding: 40px; /* Padding interno */
-    border-radius: 12px; /* Borde redondeado */
-    box-shadow: 0 0 5px rgba(0,0,0,0.1); /* Sombra ligera */
-    box-sizing: border-box; /* Incluye borde y padding en el tamaño total */
-    margin: 100px auto 0; /* Margen superior, auto para centrar horizontalmente */
+    max-width: 500px;
+    background-color: #f2f2f2;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    margin: 100px auto 0;
 }
 
-/* Estilo para el rectángulo interno con bordes redondos */
 .inner-box {
-    background-color: #d292f79d; /* Fondo gris oscuro para resaltar el formulario interno */
-    padding: 20px; /* Padding interno */
-    border-radius: 10px; /* Borde redondeado */
-    border: 1px solid #0f0d0d; /* Borde rojo del rectángulo interno */
+    background-color: #d292f79d;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #0f0d0d;
 }
 
-/* Estilo para los campos de entrada y etiquetas dentro del rectángulo interno */
 form label,
 form input[type="text"],
 form input[type="email"],
 form input[type="radio"],
 form input[type="checkbox"] {
-    /* Mostrar en bloque para ocupar toda la anchura del rectángulo */
-    margin-bottom: 5px; /* Espacio entre elementos */
-    color: #fff; /* Color blanco para el texto dentro del rectángulo */
+    margin-bottom: 5px;
+    color: #fff;
 }
 
-/* Ajuste específico para checkboxes */
 form input[type="checkbox"] {
-    display: inline-block; /* Alineación en línea */
-    margin-right: 5px; /* Espacio entre checkboxes */
+    display: inline-block;
+    margin-right: 5px;
 }
 
-/* Estilo para el botón de enviar */
 form input[type="submit"] {
-    background-color: #6a0dad; /* Morado oscuro para el fondo del botón */
+    background-color: #6a0dad;
     color: white;
     border: none;
-    padding: 12px 20px; /* Ajustado el padding de 12px 10px a 12px 20px */
+    padding: 12px 20px;
     cursor: pointer;
-    font-size: 1em; /* Cambiado a 1em para mantener consistencia */
+    font-size: 1em;
     border-radius: 4px;
-    width: 100%; /* Botón ocupa todo el ancho del contenedor */
-    box-sizing: border-box; /* Incluir padding en el tamaño total */
+    width: 100%;
+    box-sizing: border-box;
 }
 
 form input[type="submit"]:hover {
-    background-color: #4b0082; 
+    background-color: #4b0082;
+}
 
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5em; 
+        margin-top: 50px; 
+    }
+
+    .container {
+        width: 90%; 
+        padding: 20px; 
+        margin: 50px auto 0; 
+    }
+
+    form input[type="submit"] {
+        padding: 10px 15px; 
+        font-size: 0.9em; 
+    }
 }
